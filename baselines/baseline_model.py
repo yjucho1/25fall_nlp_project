@@ -1,4 +1,5 @@
 from .LLM.GPT import GPT
+from .LLM.Qwen import Qwen
 
 class baseline_model():
     def __init__(self, params, mode):
@@ -17,6 +18,9 @@ class baseline_model():
             if 'gpt' in self.model_name.lower() or 'deepseek' in self.model_name.lower():
                 print("GPT models")
                 self.model = GPT(self.params)
+            elif 'qwen' in self.model_name.lower():
+                print("Qwen models")
+                self.model = Qwen(self.params)
             else:
                 print(f"Invalid (baseline_type, model_name) pair.\nYou gave (baseline_type, model_name) = ({self.baseline_type}, {self.model_name}).")
                 raise NotImplementedError

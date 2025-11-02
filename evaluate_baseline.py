@@ -103,6 +103,7 @@ def to_display_name(nm: str) -> str:
 
 
 def main():
+    print("parameters:", params)
     dataset_name = params['dataset']
 
     # test: C, I, 그리고 concat2/3/4 (파일명으로부터 자동)
