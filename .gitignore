@@ -1,16 +1,13 @@
 *.pyc
 *.pth
-*.json
 *.jsonl
 *.log
 *.out
 *.xlsx
-*.pickle
 *.txt
 *.sh
 
 wandb/
-results/
 run_gsds/
 run_ski/
 
