@@ -1,0 +1,2602 @@
+[
+  {
+    "questions": [
+      "is desk brown?",
+      "is desk pink?",
+      "what color is desk?"
+    ],
+    "diff_question": "what color is desk?",
+    "con_answer": "brown",
+    "incon_answer": "white",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "Who is standing on platform?",
+      "can you see a platform?",
+      "is person standing on platform?",
+      "is there person?"
+    ],
+    "diff_question": "is there person?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is on grass?",
+      "is sheep on grass?",
+      "is there grass?",
+      "is there sheep?",
+      "where is sheep?"
+    ],
+    "diff_question": "is there sheep?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is sky pink?",
+      "is sky white?",
+      "is table empty?",
+      "is table full?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What are floating in sky?",
+      "Who has face?",
+      "are clouds floating in sky?",
+      "are there clouds?",
+      "can you see a sky?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "is cat moving?",
+      "is cat sitting?",
+      "what is cat doing?"
+    ],
+    "diff_question": "is cat sitting?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is field grassless?",
+      "is field grassy?",
+      "is woman posing?",
+      "what is woman doing?"
+    ],
+    "diff_question": "what is woman doing?",
+    "con_answer": "posing",
+    "incon_answer": "playing",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is field green?",
+      "is field red?",
+      "is snowboard gray?",
+      "is snowboard red?",
+      "what color is field?"
+    ],
+    "diff_question": "is field green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "What has ceiling?",
+      "can you see a ceiling?",
+      "is frame of ceiling?",
+      "is there frame?"
+    ],
+    "diff_question": "is there frame?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky purple?",
+      "is umbrella black?",
+      "is umbrella brown?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is sign ahistorical?",
+      "is sign historical?"
+    ],
+    "diff_question": "is sign ahistorical?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is floor black?",
+      "is floor blue?",
+      "is path red?",
+      "is path yellow?",
+      "what color is floor?"
+    ],
+    "diff_question": "is path red?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is bus orange?",
+      "is bus white?",
+      "what color is bus?"
+    ],
+    "diff_question": "what color is bus?",
+    "con_answer": "white",
+    "incon_answer": "gray",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is bed large?",
+      "is bed small?",
+      "is wall green?",
+      "is wall orange?",
+      "what color is wall?"
+    ],
+    "diff_question": "is wall green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "What are on beach?",
+      "are horses on beach?",
+      "are there horses?",
+      "is there beach?",
+      "where are horses?"
+    ],
+    "diff_question": "are there horses?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is bus close?",
+      "is bus open?"
+    ],
+    "diff_question": "is bus open?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is crowd watching?",
+      "is water pink?",
+      "is water white?",
+      "what color is water?",
+      "what is crowd doing?"
+    ],
+    "diff_question": "is water white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is cat clean?",
+      "is cat dirty?"
+    ],
+    "diff_question": "is cat dirty?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is tree gray?",
+      "is tree green?",
+      "what color is tree?"
+    ],
+    "diff_question": "is tree green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky red?",
+      "what color is sky?"
+    ],
+    "diff_question": "what color is sky?",
+    "con_answer": "blue",
+    "incon_answer": "white",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is board black?",
+      "is board green?",
+      "is sky blue?",
+      "is sky red?",
+      "what color is board?"
+    ],
+    "diff_question": "what color is board?",
+    "con_answer": "black",
+    "incon_answer": "green",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky gray?",
+      "what color is sky?"
+    ],
+    "diff_question": "what color is sky?",
+    "con_answer": "blue",
+    "incon_answer": "gray",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is statue gray?",
+      "is statue white?",
+      "what color is statue?"
+    ],
+    "diff_question": "what color is statue?",
+    "con_answer": "white",
+    "incon_answer": "yellow",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "Who is with hair?",
+      "can you see a hair?",
+      "is there woman?",
+      "is woman with hair?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is on desk?",
+      "can you see a desk?",
+      "is laptop on desk?",
+      "is there laptop?",
+      "where is laptop?"
+    ],
+    "diff_question": "is there laptop?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is blanket gray?",
+      "is blanket pink?",
+      "what color is blanket?"
+    ],
+    "diff_question": "is blanket gray?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is in field?",
+      "can you see a field?",
+      "is animal in field?",
+      "is there animal?",
+      "is tree large?"
+    ],
+    "diff_question": "is there animal?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "Who is wearing jacket?",
+      "is there jacket?",
+      "is there woman?",
+      "is woman wearing jacket?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky gray?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is near station?",
+      "can you see a station?",
+      "is there train?",
+      "is train near station?",
+      "where is train?"
+    ],
+    "diff_question": "is there train?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is frame metal?",
+      "is frame nonmetallic?",
+      "is sky blue?",
+      "is sky orange?",
+      "what color is sky?"
+    ],
+    "diff_question": "is frame nonmetallic?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "Who is standing in front of wall?",
+      "is there wall?",
+      "is there woman?",
+      "is woman standing in front of wall?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What are on water?",
+      "are ripples on water?",
+      "are there ripples?",
+      "can you see a water?",
+      "where are ripples?"
+    ],
+    "diff_question": "are there ripples?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is suit black?",
+      "is suit orange?",
+      "what color is suit?"
+    ],
+    "diff_question": "is suit black?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "Who is with hair?",
+      "can you see a hair?",
+      "is dish orange?",
+      "is dish white?",
+      "is there woman?"
+    ],
+    "diff_question": "is dish white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is head brown?",
+      "is head yellow?",
+      "is horse brown?",
+      "is horse yellow?",
+      "what color is head?"
+    ],
+    "diff_question": "is horse brown?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "Who is taking wall?",
+      "can you see a wall?",
+      "is man taking wall?",
+      "is table brown?",
+      "is table white?"
+    ],
+    "diff_question": "is there man?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is jet painted?",
+      "is jet unpainted?"
+    ],
+    "diff_question": "is jet unpainted?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What has elephant?",
+      "is dirt brown?",
+      "is dirt green?",
+      "is there elephant?",
+      "is there trunk?"
+    ],
+    "diff_question": "is there trunk?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is carpet green?",
+      "is carpet yellow?",
+      "is dog sitting?",
+      "is dog standing?",
+      "what color is carpet?"
+    ],
+    "diff_question": "what color is carpet?",
+    "con_answer": "yellow",
+    "incon_answer": "brown",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "Who is standing on chair?",
+      "is person standing on chair?",
+      "is there chair?",
+      "is there person?"
+    ],
+    "diff_question": "is there person?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is placed near wall?",
+      "is sofa placed near wall?",
+      "is there sofa?",
+      "is there wall?"
+    ],
+    "diff_question": "is there sofa?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is elephant big?",
+      "is elephant small?",
+      "what size is elephant?"
+    ],
+    "diff_question": "what size is elephant?",
+    "con_answer": "big",
+    "incon_answer": "large",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is grass orange?",
+      "is grass yellow?",
+      "what color is grass?"
+    ],
+    "diff_question": "what color is grass?",
+    "con_answer": "yellow",
+    "incon_answer": "white",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is food cooked?",
+      "is food raw?"
+    ],
+    "diff_question": "is food raw?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is littering sidewalk?",
+      "is there sidewalk?",
+      "is there trash?",
+      "is trash littering sidewalk?"
+    ],
+    "diff_question": "is there trash?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is on table?",
+      "can you see a table?",
+      "is bowl on table?",
+      "is there bowl?",
+      "where is bowl?"
+    ],
+    "diff_question": "is there bowl?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "Who is wearing shirt?",
+      "can you see a shirt?",
+      "is child wearing shirt?",
+      "is there child?"
+    ],
+    "diff_question": "is there child?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is bathroom beautiful?",
+      "is bathroom ugly?",
+      "is water blue?",
+      "is water gray?",
+      "what color is water?"
+    ],
+    "diff_question": "is bathroom ugly?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "Who has face?",
+      "can you see a face?",
+      "does woman have a face?",
+      "is there woman?",
+      "is vehicle black?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is bench teal?",
+      "what color is bench?"
+    ],
+    "diff_question": "what color is bench?",
+    "con_answer": "teal",
+    "incon_answer": "blue",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is sky clear?",
+      "is sky cloudy?"
+    ],
+    "diff_question": "is sky clear?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is on sofa?",
+      "can you see a sofa?",
+      "is people on sofa?",
+      "is there people?",
+      "where is people?"
+    ],
+    "diff_question": "is there people?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is drives on tracks?",
+      "Who is holding umbrella?",
+      "do you see tracks?",
+      "is there train?",
+      "is there umbrella?"
+    ],
+    "diff_question": "is there train?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "What is in hood?",
+      "is reflection in hood?",
+      "is there hood?",
+      "is there reflection?",
+      "where is reflection?"
+    ],
+    "diff_question": "is there reflection?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What has building?",
+      "can you see a building?",
+      "is awning of building?",
+      "is there awning?"
+    ],
+    "diff_question": "is there awning?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What are in sky?",
+      "What is on grass?",
+      "are clouds in sky?",
+      "are there clouds?",
+      "is field on grass?"
+    ],
+    "diff_question": "are there clouds?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 10,
+    "incon_size": 10
+  },
+  {
+    "questions": [
+      "is bus gold?",
+      "is vase clean?",
+      "is vase dirty?",
+      "what color is bus?"
+    ],
+    "diff_question": "what color is bus?",
+    "con_answer": "gold",
+    "incon_answer": "yellow",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is sky clear?",
+      "is sky cloudy?"
+    ],
+    "diff_question": "is sky cloudy?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is post gray?",
+      "is post green?",
+      "what color is post?"
+    ],
+    "diff_question": "is post green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on ceiling?",
+      "is light on ceiling?",
+      "is there ceiling?",
+      "is there light?",
+      "where is light?"
+    ],
+    "diff_question": "is there light?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is lying on bed?",
+      "is cat lying on bed?",
+      "is there bed?",
+      "is there cat?"
+    ],
+    "diff_question": "is there cat?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "are trees short?",
+      "are trees tall?",
+      "is surface brown?",
+      "is surface green?",
+      "what color is surface?"
+    ],
+    "diff_question": "are trees tall?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky white?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is coat red?",
+      "is coat yellow?",
+      "is woman smiling?",
+      "what color is coat?",
+      "what is woman doing?"
+    ],
+    "diff_question": "is woman smiling?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is laptop close?",
+      "is laptop open?"
+    ],
+    "diff_question": "is laptop close?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is on chair?",
+      "is cushion on chair?",
+      "is there chair?",
+      "is there cushion?",
+      "where is cushion?"
+    ],
+    "diff_question": "is there cushion?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is near people?",
+      "can you see a people?",
+      "is elephant near people?",
+      "is there elephant?",
+      "where is elephant?"
+    ],
+    "diff_question": "is there elephant?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is rack green?",
+      "is rack orange?",
+      "is table brown?",
+      "is table orange?",
+      "what color is rack?"
+    ],
+    "diff_question": "is table brown?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is court indoor?",
+      "is court outdoor?"
+    ],
+    "diff_question": "is court indoor?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is covering shore?",
+      "can you see a shore?",
+      "is grass covering shore?",
+      "is there grass?"
+    ],
+    "diff_question": "is there grass?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is overlooking tub?",
+      "can you see a tub?",
+      "is mirror overlooking tub?",
+      "is there mirror?"
+    ],
+    "diff_question": "is there mirror?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is under giraffe?",
+      "can you see a giraffe?",
+      "is ground under giraffe?",
+      "is there ground?",
+      "where is ground?"
+    ],
+    "diff_question": "is there ground?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is snow brown?",
+      "is snow white?",
+      "what color is snow?"
+    ],
+    "diff_question": "is snow white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is railing metal?",
+      "is railing nonmetallic?"
+    ],
+    "diff_question": "is railing nonmetallic?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is dress pink?",
+      "is dress yellow?",
+      "what color is dress?"
+    ],
+    "diff_question": "is dress pink?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is with giraffes?",
+      "are there giraffes?",
+      "is park with giraffes?",
+      "is there park?"
+    ],
+    "diff_question": "is there park?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is in back of table?",
+      "can you see a table?",
+      "is chair in back of table?",
+      "is there chair?"
+    ],
+    "diff_question": "is there chair?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is patch dry?",
+      "is patch wet?"
+    ],
+    "diff_question": "is patch dry?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is structure gray?",
+      "is structure white?",
+      "what color is structure?"
+    ],
+    "diff_question": "is structure white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on sidewalk?",
+      "is there sidewalk?",
+      "is there tree?",
+      "is tree on sidewalk?",
+      "where is tree?"
+    ],
+    "diff_question": "is there tree?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is tree short?",
+      "is tree tall?",
+      "what size is tree?"
+    ],
+    "diff_question": "what size is tree?",
+    "con_answer": "tall",
+    "incon_answer": "large",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is by water?",
+      "can you see a water?",
+      "is chair by water?",
+      "is there chair?"
+    ],
+    "diff_question": "is there chair?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is bear pink?",
+      "is bear red?",
+      "is bus green?",
+      "is bus red?",
+      "what color is bear?"
+    ],
+    "diff_question": "is bear red?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "Who is on ground?",
+      "can you see a ground?",
+      "is man on ground?",
+      "is there man?",
+      "where is man?"
+    ],
+    "diff_question": "is there man?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is grass green?",
+      "is grass orange?",
+      "what color is grass?"
+    ],
+    "diff_question": "is grass green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is building large?",
+      "is building small?",
+      "is pavement dark?",
+      "is pavement light?",
+      "what size is building?"
+    ],
+    "diff_question": "is building large?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "Who has hair?",
+      "does child have hair?",
+      "is there child?",
+      "is there hair?"
+    ],
+    "diff_question": "is there child?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What are in sky?",
+      "are clouds in sky?",
+      "are there clouds?",
+      "can you see a sky?",
+      "where are clouds?"
+    ],
+    "diff_question": "are there clouds?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What are covered with snow?",
+      "are branches covered with snow?",
+      "are there branches?",
+      "can you see a snow?"
+    ],
+    "diff_question": "are there branches?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is child aged?",
+      "is child young?"
+    ],
+    "diff_question": "is child aged?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is standing in field?",
+      "can you see a field?",
+      "is sheep standing in field?",
+      "is there sheep?"
+    ],
+    "diff_question": "is there sheep?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is snow figure?",
+      "is snow ground?"
+    ],
+    "diff_question": "is snow figure?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is building orange?",
+      "is building white?",
+      "is train linger?",
+      "is train speeding?",
+      "what color is building?"
+    ],
+    "diff_question": "is building white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What has person?",
+      "What is covering mountain?",
+      "Who is head of?",
+      "can you see a person?",
+      "is head of person?"
+    ],
+    "diff_question": "is there head?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "is shirt navy?",
+      "what color is shirt?"
+    ],
+    "diff_question": "is shirt navy?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is on man?",
+      "Who is shirt on?",
+      "is shirt on man?",
+      "is there man?",
+      "is there shirt?"
+    ],
+    "diff_question": "is there shirt?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is beach tan?",
+      "is forest leafless?",
+      "is forest leafy?",
+      "what color is beach?"
+    ],
+    "diff_question": "is beach tan?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is bike moving?",
+      "is bike parked?"
+    ],
+    "diff_question": "is bike moving?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is zebra attractive?",
+      "is zebra unattractive?"
+    ],
+    "diff_question": "is zebra unattractive?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is sky black?",
+      "is sky blue?",
+      "is sky clear?",
+      "is sky cloudy?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky clear?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is cloud white?",
+      "is cloud yellow?",
+      "what color is cloud?"
+    ],
+    "diff_question": "is cloud white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What are on beach?",
+      "What is on cat?",
+      "are boats on beach?",
+      "are there boats?",
+      "can you see a beach?"
+    ],
+    "diff_question": "are there boats?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 10,
+    "incon_size": 10
+  },
+  {
+    "questions": [
+      "What is on floor?",
+      "is bench blue?",
+      "is bench white?",
+      "is lamp on floor?",
+      "is there floor?"
+    ],
+    "diff_question": "is there lamp?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "What is covered in snow?",
+      "can you see a snow?",
+      "is ground covered in snow?",
+      "is jacket blue?",
+      "is jacket gray?"
+    ],
+    "diff_question": "is there ground?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What has room?",
+      "is floor of a room?",
+      "is plate round?",
+      "is plate square?",
+      "is there floor?"
+    ],
+    "diff_question": "is plate round?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is curtain red?",
+      "is curtain yellow?",
+      "what color is curtain?"
+    ],
+    "diff_question": "is curtain red?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is shirt large?",
+      "is shirt small?",
+      "what size is shirt?"
+    ],
+    "diff_question": "is shirt small?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is sink round?",
+      "is sink square?"
+    ],
+    "diff_question": "is sink square?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is bench long?",
+      "is bench short?",
+      "what size is bench?"
+    ],
+    "diff_question": "is bench long?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "Who is seated at table?",
+      "are trees blue?",
+      "are trees white?",
+      "can you see a table?",
+      "is man seated at table?"
+    ],
+    "diff_question": "is there man?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What are in sky?",
+      "are clouds in sky?",
+      "are there clouds?",
+      "can you see a sky?",
+      "is rock large?"
+    ],
+    "diff_question": "is rock large?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "What is against wall?",
+      "is chair against wall?",
+      "is there chair?",
+      "is there wall?"
+    ],
+    "diff_question": "is there chair?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "Who is wearing shorts?",
+      "are there shorts?",
+      "is there woman?",
+      "is wall purple?",
+      "is wall white?"
+    ],
+    "diff_question": "is wall white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is sheep purple?",
+      "is sheep white?",
+      "what color is sheep?"
+    ],
+    "diff_question": "is sheep white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What has food?",
+      "What is behind player?",
+      "can you see a food?",
+      "can you see a player?",
+      "is plate of food?"
+    ],
+    "diff_question": "is there wall?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "is ground purple?",
+      "is ground white?",
+      "what color is ground?"
+    ],
+    "diff_question": "is ground white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on table?",
+      "can you see a table?",
+      "is plate on table?",
+      "is there plate?",
+      "where is plate?"
+    ],
+    "diff_question": "is there plate?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is in grass?",
+      "is there grass?",
+      "is there zebra?",
+      "is zebra in grass?",
+      "where is zebra?"
+    ],
+    "diff_question": "is there zebra?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What has man?",
+      "Who is shirt of?",
+      "can you see a man?",
+      "is shirt of man?",
+      "is there shirt?"
+    ],
+    "diff_question": "is there shirt?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is metal long?",
+      "is metal short?",
+      "is pillow big?",
+      "is pillow small?",
+      "what size is metal?"
+    ],
+    "diff_question": "is metal long?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "are clouds colorful?",
+      "are clouds colorless?",
+      "what color are clouds?"
+    ],
+    "diff_question": "are clouds colorful?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is court green?",
+      "is court pink?",
+      "what color is court?"
+    ],
+    "diff_question": "is court green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What has waves?",
+      "do you see waves?",
+      "does water have waves?",
+      "is there water?"
+    ],
+    "diff_question": "is there water?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky yellow?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What has frame?",
+      "What is near runway?",
+      "does bed have a frame?",
+      "is grass near runway?",
+      "is there bed?"
+    ],
+    "diff_question": "is there grass?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "is plate round?",
+      "is plate square?",
+      "is sky blue?",
+      "is sky brown?",
+      "what color is sky?"
+    ],
+    "diff_question": "is plate square?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is standing in field?",
+      "can you see a field?",
+      "is sheep standing in field?",
+      "is there sheep?"
+    ],
+    "diff_question": "is there sheep?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What are around track?",
+      "are rocks around track?",
+      "are there rocks?",
+      "is there track?"
+    ],
+    "diff_question": "are there rocks?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is zebra black?",
+      "is zebra brown?",
+      "what color is zebra?"
+    ],
+    "diff_question": "what color is zebra?",
+    "con_answer": "black",
+    "incon_answer": "white",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is taken from wing?",
+      "can you see a wing?",
+      "is sky taken from wing?",
+      "is there sky?"
+    ],
+    "diff_question": "is there sky?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is covering floor?",
+      "can you see a floor?",
+      "is rug covering floor?",
+      "is there rug?"
+    ],
+    "diff_question": "is there rug?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is in station?",
+      "What is on girl?",
+      "Who is dress on?",
+      "can you see a girl?",
+      "can you see a station?"
+    ],
+    "diff_question": "is there dress?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 11,
+    "incon_size": 11
+  },
+  {
+    "questions": [
+      "What is over river?",
+      "can you see a river?",
+      "is bridge over river?",
+      "is patch argillaceous?",
+      "is patch sandy?"
+    ],
+    "diff_question": "is there bridge?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "is grass blue?",
+      "is grass green?",
+      "what color is grass?"
+    ],
+    "diff_question": "what color is grass?",
+    "con_answer": "green",
+    "incon_answer": "yellow",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is at station?",
+      "What is on ground?",
+      "can you see a ground?",
+      "is grass on ground?",
+      "is there grass?"
+    ],
+    "diff_question": "is there grass?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "Who is in coat?",
+      "Who is playing in field?",
+      "is person playing in field?",
+      "is there coat?",
+      "is there field?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "Who is wearing on shirt?",
+      "is kid wearing on shirt?",
+      "is sidewalk black?",
+      "is sidewalk gray?",
+      "is there kid?"
+    ],
+    "diff_question": "is sidewalk black?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What is on desk?",
+      "Who is sheering sheep?",
+      "is man sheering sheep?",
+      "is screen on desk?",
+      "is there desk?"
+    ],
+    "diff_question": "is there man?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "What is covering ground?",
+      "is snow covering ground?",
+      "is there ground?",
+      "is there snow?"
+    ],
+    "diff_question": "is there snow?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What has water?",
+      "can you see a water?",
+      "is body of water?",
+      "is desk black?",
+      "is desk blue?"
+    ],
+    "diff_question": "what color is desk?",
+    "con_answer": "black",
+    "incon_answer": "brown",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What have window?",
+      "are blinds of a window?",
+      "are there blinds?",
+      "can you see a window?"
+    ],
+    "diff_question": "are there blinds?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is elephant sitting?",
+      "is elephant walking?",
+      "what is elephant doing?"
+    ],
+    "diff_question": "what is elephant doing?",
+    "con_answer": "walking",
+    "incon_answer": "standing",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is in grass?",
+      "can you see a grass?",
+      "is sheep in grass?",
+      "is there sheep?",
+      "where is sheep?"
+    ],
+    "diff_question": "is there sheep?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is cow black?",
+      "is cow yellow?",
+      "is sky clear?",
+      "is sky cloudy?",
+      "what color is cow?"
+    ],
+    "diff_question": "is sky clear?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is motorcycle purple?",
+      "is motorcycle red?",
+      "what color is motorcycle?"
+    ],
+    "diff_question": "is motorcycle red?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is sky blue?",
+      "is sky purple?",
+      "what color is sky?"
+    ],
+    "diff_question": "is sky blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on grass?",
+      "can you see a grass?",
+      "is shelf dark?",
+      "is shelf light?",
+      "is snow on grass?"
+    ],
+    "diff_question": "is there snow?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is grass green?",
+      "is grass orange?",
+      "what color is grass?"
+    ],
+    "diff_question": "is grass green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is crowd admiring?",
+      "is crowd look_down_on?"
+    ],
+    "diff_question": "is crowd look_down_on?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What are on counter?",
+      "are plates on counter?",
+      "are there plates?",
+      "can you see a counter?",
+      "is animal tame?"
+    ],
+    "diff_question": "is animal tame?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What is behind woman?",
+      "Who is shelf behind?",
+      "is shelf behind woman?",
+      "is there shelf?",
+      "is there woman?"
+    ],
+    "diff_question": "is there shelf?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is leaning on plant?",
+      "is cat leaning on plant?",
+      "is motorcycle moving?",
+      "is motorcycle parked?",
+      "is there cat?"
+    ],
+    "diff_question": "is motorcycle moving?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "What is next to laptop?",
+      "can you see a laptop?",
+      "is cat next to laptop?",
+      "is plate green?",
+      "is plate white?"
+    ],
+    "diff_question": "is there cat?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "What is on floor?",
+      "can you see a floor?",
+      "is suitcase on floor?",
+      "is there suitcase?",
+      "where is suitcase?"
+    ],
+    "diff_question": "is there suitcase?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is giraffe curious?",
+      "is giraffe incurious?",
+      "is refrigerator orange?",
+      "is refrigerator white?",
+      "what color is refrigerator?"
+    ],
+    "diff_question": "is giraffe incurious?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is luggage close?",
+      "is luggage open?"
+    ],
+    "diff_question": "is luggage close?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What are on branches?",
+      "are leaves on branches?",
+      "are there leaves?",
+      "do you see branches?",
+      "where are leaves?"
+    ],
+    "diff_question": "are there leaves?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "are zebras moving?",
+      "are zebras sitting?"
+    ],
+    "diff_question": "are zebras sitting?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is along neck?",
+      "can you see a neck?",
+      "is hair along neck?",
+      "is there hair?"
+    ],
+    "diff_question": "is there hair?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is sticking out ocean?",
+      "is giraffe orange?",
+      "is giraffe white?",
+      "is land sticking out ocean?",
+      "is there land?"
+    ],
+    "diff_question": "what color is giraffe?",
+    "con_answer": "white",
+    "incon_answer": "tan",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is building short?",
+      "is building tall?",
+      "what size is building?"
+    ],
+    "diff_question": "what size is building?",
+    "con_answer": "tall",
+    "incon_answer": "large",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is man female?",
+      "is man male?"
+    ],
+    "diff_question": "is man female?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "Who is wearing shirt?",
+      "are bricks green?",
+      "are bricks white?",
+      "can you see a shirt?",
+      "is man wearing shirt?"
+    ],
+    "diff_question": "are bricks white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is strap black?",
+      "is strap yellow?",
+      "what color is strap?"
+    ],
+    "diff_question": "is strap black?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is girl dry?",
+      "is girl wet?"
+    ],
+    "diff_question": "is girl dry?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "is shirt blue?",
+      "is shirt red?",
+      "is sky clear?",
+      "is sky cloudy?",
+      "what color is shirt?"
+    ],
+    "diff_question": "is shirt blue?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "Who has hair?",
+      "does woman have hair?",
+      "is sky clear?",
+      "is sky cloudy?",
+      "is there hair?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "Who is standing on floor?",
+      "is there floor?",
+      "is there woman?",
+      "is woman standing on floor?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is horse sitting?",
+      "is horse standing?",
+      "what is horse doing?"
+    ],
+    "diff_question": "is horse standing?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is bag black?",
+      "is bag pink?",
+      "what color is bag?"
+    ],
+    "diff_question": "is bag black?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "Who is wearing jacket?",
+      "is man wearing jacket?",
+      "is surface pink?",
+      "is surface white?",
+      "is there jacket?"
+    ],
+    "diff_question": "is surface white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is door black?",
+      "is door gray?",
+      "what color is door?"
+    ],
+    "diff_question": "is door black?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on ground?",
+      "can you see a ground?",
+      "is sand on ground?",
+      "is there sand?",
+      "where is sand?"
+    ],
+    "diff_question": "is there sand?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What has roof?",
+      "does building have roof?",
+      "is there building?",
+      "is there roof?"
+    ],
+    "diff_question": "is there building?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What are in sky?",
+      "What is for train?",
+      "are clouds in sky?",
+      "are there clouds?",
+      "can you see a sky?"
+    ],
+    "diff_question": "is there platform?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 9,
+    "incon_size": 9
+  },
+  {
+    "questions": [
+      "are clouds gray?",
+      "are clouds pink?",
+      "what color are clouds?"
+    ],
+    "diff_question": "are clouds gray?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is carpet patterned?",
+      "is carpet plain?",
+      "is sky blue?",
+      "is sky orange?",
+      "what color is sky?"
+    ],
+    "diff_question": "is carpet plain?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "are branches gray?",
+      "are branches green?",
+      "what color are branches?"
+    ],
+    "diff_question": "are branches green?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "is sky daytime?",
+      "is sky night?"
+    ],
+    "diff_question": "is sky night?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "What is in field?",
+      "can you see a field?",
+      "is dish blue?",
+      "is dish green?",
+      "is there tree?"
+    ],
+    "diff_question": "is there tree?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "What has building?",
+      "can you see a building?",
+      "is awning of building?",
+      "is there awning?",
+      "is toilet green?"
+    ],
+    "diff_question": "is toilet white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is grass green?",
+      "is grass purple?",
+      "is trunk ascend?",
+      "is trunk fallen?",
+      "what color is grass?"
+    ],
+    "diff_question": "is trunk ascend?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "is plate white?",
+      "is plate yellow?",
+      "what color is plate?"
+    ],
+    "diff_question": "is plate white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is in back of table?",
+      "can you see a table?",
+      "is chair in back of table?",
+      "is there chair?"
+    ],
+    "diff_question": "is there chair?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is shirt dress?",
+      "is shirt striped?",
+      "is wall blue?",
+      "is wall white?",
+      "what color is wall?"
+    ],
+    "diff_question": "is shirt dress?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is standing in background?",
+      "are horses blue?",
+      "are horses brown?",
+      "can you see a background?",
+      "is fence standing in background?"
+    ],
+    "diff_question": "are horses brown?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is curtain black?",
+      "is curtain gray?",
+      "what color is curtain?"
+    ],
+    "diff_question": "what color is curtain?",
+    "con_answer": "black",
+    "incon_answer": "white",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "What is on wall?",
+      "can you see a wall?",
+      "is box metal?",
+      "is box nonmetallic?",
+      "is painting on wall?"
+    ],
+    "diff_question": "is box nonmetallic?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "What is on cake?",
+      "can you see a cake?",
+      "is knife on cake?",
+      "is sky above?",
+      "is sky below?"
+    ],
+    "diff_question": "is there knife?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 7,
+    "incon_size": 7
+  },
+  {
+    "questions": [
+      "is metal gray?",
+      "is metal purple?",
+      "is table brown?",
+      "is table white?",
+      "what color is metal?"
+    ],
+    "diff_question": "is table white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "What is on ground?",
+      "is clock on ground?",
+      "is there clock?",
+      "is there ground?",
+      "where is clock?"
+    ],
+    "diff_question": "is there clock?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  },
+  {
+    "questions": [
+      "What is standing in background?",
+      "is structure standing in background?",
+      "is there background?",
+      "is there structure?"
+    ],
+    "diff_question": "is there structure?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "is girl purple?",
+      "is girl white?",
+      "what color is girl?"
+    ],
+    "diff_question": "is girl white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 3,
+    "incon_size": 3
+  },
+  {
+    "questions": [
+      "are windows dark?",
+      "are windows light?"
+    ],
+    "diff_question": "are windows light?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 2,
+    "incon_size": 2
+  },
+  {
+    "questions": [
+      "Who is wearing coat?",
+      "is there coat?",
+      "is there woman?",
+      "is woman wearing coat?"
+    ],
+    "diff_question": "is there woman?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "Who is sitting on chair?",
+      "is girl sitting on chair?",
+      "is there chair?",
+      "is there girl?"
+    ],
+    "diff_question": "is there girl?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 4,
+    "incon_size": 4
+  },
+  {
+    "questions": [
+      "What is in city?",
+      "is building in city?",
+      "is fur brown?",
+      "is fur green?",
+      "is there building?"
+    ],
+    "diff_question": "is fur brown?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 8,
+    "incon_size": 8
+  },
+  {
+    "questions": [
+      "Who is over table?",
+      "is floor beautiful?",
+      "is floor ugly?",
+      "is man over table?",
+      "is there man?"
+    ],
+    "diff_question": "is floor ugly?",
+    "con_answer": "no",
+    "incon_answer": "yes",
+    "con_size": 6,
+    "incon_size": 6
+  },
+  {
+    "questions": [
+      "are tracks empty?",
+      "are tracks full?",
+      "is plate brown?",
+      "is plate white?",
+      "what color is plate?"
+    ],
+    "diff_question": "is plate white?",
+    "con_answer": "yes",
+    "incon_answer": "no",
+    "con_size": 5,
+    "incon_size": 5
+  }
+]

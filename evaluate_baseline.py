@@ -1,8 +1,5 @@
 import yaml, math, os, datetime, json, time
 import argparse
-import glob
-from pathlib import Path
-
 import torch
 
 from trainer.modules import evaluate_baseline
@@ -11,6 +8,7 @@ from baselines.baseline_model import baseline_model
 from baselines.LLM.lm_loader import lm_loader
 
 from utils import merge_dict, parser_add, params_add
+from probing.dataset_utils import load_split_pickles_as_datasets, to_display_name
 
 parser = argparse.ArgumentParser()
 parser = parser_add(parser)
@@ -35,71 +33,6 @@ record_path = os.path.join(folder_path, f"{runname}.json")
 
 params['folder_path'] = folder_path
 params['record_path'] = record_path
-
-
-# =========================
-# set_consistency_dataset 로더 유틸
-# =========================
-import pickle
-
-def _pkl_path(dataset_name: str, split: str, name: str) -> Path:
-    """
-    set_consistency_dataset/{dataset_name}/ 하위의 피클 경로를 반환.
-    파일명 규칙: {dataset_name}_{split}_{NAME}_dataset.pickle
-      예) lconvqa_test_C_dataset.pickle, lconvqa_test_CI_dataset.pickle
-    name 인자는 "test_C", "test_CI" 등 split 접두사를 포함한 문자열을 기대.
-    """
-    base = Path("set_consistency_dataset") / dataset_name
-    fname = f"{dataset_name}_{name}_dataset.pickle"
-    return base / fname
-
-
-def list_split_pickles(dataset_name: str, split: str):
-    """
-    split ∈ {"test","eval"...} 에 대해
-    set_consistency_dataset/{dataset_name}/{dataset_name}_{split}_*_dataset.pickle 수집/정렬.
-    반환: (names_sorted, paths_sorted)
-      names_sorted: ["C","I","CC","CI","II","CCC", ...]
-    정렬: "C","I" 먼저, 이후 길이/사전순.
-    """
-    base = Path("set_consistency_dataset") / dataset_name
-    patt = str(base / f"{dataset_name}_{split}_*_dataset.pickle")
-    paths = sorted(glob.glob(patt))
-
-    names = []
-    for p in paths:
-        fn = Path(p).name  # e.g., lconvqa_test_C_dataset.pickle
-        prefix = f"{dataset_name}_{split}_"
-        if not (fn.startswith(prefix) and fn.endswith("_dataset.pickle")):
-            raise RuntimeError(f"Unexpected filename: {fn}")
-        name = fn[len(prefix):-len("_dataset.pickle")]  # "C","I","CI","CCC",...
-        names.append(name)
-
-    def _order_key(x):
-        if x == "C": return (0, 0, x)
-        if x == "I": return (0, 1, x)
-        return (1, len(x), x)
-
-    names_sorted = sorted(names, key=_order_key)
-    paths_sorted = [_pkl_path(dataset_name, split, f"{split}_{nm}") for nm in names_sorted]
-    return names_sorted, paths_sorted
-
-
-def load_split_pickles_as_datasets(dataset_name: str, split: str):
-    names, paths = list_split_pickles(dataset_name, split)
-    datasets = []
-    for nm, p in zip(names, paths):
-        if not p.exists():
-            raise FileNotFoundError(f"Missing pickle: {p}")
-        with open(p, "rb") as f:
-            ds = pickle.load(f)
-        datasets.append(ds)
-    return names, datasets
-
-
-def to_display_name(nm: str) -> str:
-    # "C"→"con", "I"→"incon", 나머지는 그대로("CI","CC" 등)
-    return "con" if nm == "C" else ("incon" if nm == "I" else nm)
 
 
 def main():

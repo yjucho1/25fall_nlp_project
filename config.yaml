@@ -41,6 +41,83 @@ baseline:
   prediction_type: all_in_one # candidate: "all_in_one", "one_to_one", "many_to_one"
   locate_type: all_in_one
 
+probing:
+  cache_dir: results/probing_cache
+  split: test
+  answer_prefix: "\nConsistency: "
+  candidate_answers:
+    - consistent
+    - inconsistent
+  max_examples: null
+  parallel_workers: 4
+  sweeps:
+    linear:
+      layers:
+        - [-1]
+        - [-2, -1]
+      pool:
+        - last
+        - mean
+      candidate_mode:
+        - diff
+      normalize:
+        - true
+        - false
+      lr:
+        - 0.001
+        - 0.0005
+      weight_decay:
+        - 0.0
+        - 0.01
+      batch_size:
+        - 64
+      epochs:
+        - 5
+    mlp:
+      layers:
+        - [-1]
+      pool:
+        - last
+      candidate_mode:
+        - concat
+      hidden_dim:
+        - 256
+        - 512
+      depth:
+        - 2
+      dropout:
+        - 0.0
+        - 0.1
+      lr:
+        - 0.001
+      weight_decay:
+        - 0.0
+      batch_size:
+        - 64
+      epochs:
+        - 10
+    ccs:
+      layers:
+        - [-1]
+      pool:
+        - last
+      candidate_mode:
+        - diff
+      lr:
+        - 0.1
+        - 0.05
+      steps:
+        - 2000
+      consistency_weight:
+        - 1.0
+      confidence_weight:
+        - 0.1
+        - 0.2
+      balance_weight:
+        - 0.1
+      temperature:
+        - 1.0
+
 # dataset
 lconvqa:
   stepwise_dataset_train_num: 6754 # max 6754

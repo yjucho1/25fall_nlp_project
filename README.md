@@ -55,6 +55,35 @@ Baseline models can be evaluated with:
   python evaluate_baseline.py --task vqa --dataset lconvqa --type llm --model gpt-4o-mini --shot_num 5
 ```
 
+## Probing Classifiers
+
+The `probing` module adds hidden-state extraction and multiple probe training routines:
+
+1. **Hidden-state cache**  
+   Run the local LLM once per example and cache the final-token activations (all layers, both `consistent` and `inconsistent` completions):  
+   ```bash
+   python probing/extract_hidden_states.py --task vqa --dataset lconvqa --config config.yaml --probe_split train
+   ```
+   Cached tensors are stored under `results/probing_cache/<task>/<dataset>/<model>/<split>/`.
+
+2. **Supervised probes (linear & MLP)**  
+   After caching, launch hyperparameter sweeps with optional parallel workers:  
+   ```bash
+   python probing/train_supervised.py --task vqa --dataset lconvqa \
+       --probe_train_split train --probe_eval_split test --probe_types linear,mlp
+   ```
+   Results for every sweep configuration are saved as JSON in `results/probing_cache/.../probe_runs/`.
+
+3. **Unsupervised CCS probe**  
+   Implemented following the Contrast-Consistent Search objective (Burns et al., 2024).  
+   ```bash
+   python probing/train_unsupervised_ccs.py --task vqa --dataset lconvqa \
+       --probe_train_split train --probe_eval_split test
+   ```
+   The CCS sweeps share the same cache and prompt configuration as the supervised runs, so no extra LM forward passes are necessary.
+
+All probing scripts reuse the prompts from baseline decoding and read their sweeps/defaults from the `probing` section of `config.yaml`.
+
 ## Locate
 
 To run the locate procedure on a trained energy model:

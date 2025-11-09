@@ -1,0 +1,8 @@
+{
+  "stats": {
+    "scanned_incon": 33770,
+    "matched_pairs": 33665
+  },
+  "output_pickle": "results/minimal_pairs/lconvqa/lconvqa_minimal_pairs.pickle",
+  "output_preview": "results/minimal_pairs/lconvqa/lconvqa_minimal_pairs_preview.json"
+}

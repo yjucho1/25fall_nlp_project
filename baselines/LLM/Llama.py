@@ -16,6 +16,8 @@ class Llama():
         self.prompt_template_for_prediction = None
         self.prompt_template_for_locate = None
         self.prediction_type = self.params['baseline']['prediction_type']
+        self.probing_cfg = self.params.get('probing', {})
+        self.answer_prefix = self.probing_cfg.get('answer_prefix', "\nConsistency: ")
         if not 'do_not_initialize' in self.params['baseline']:
             self.initialize_prompt()
 
@@ -66,6 +68,64 @@ class Llama():
             skip_special_tokens=True
         )
         return output.strip()
+
+    @torch.no_grad()
+    def hidden_states_for_completions(
+        self,
+        pair,
+        completions,
+        answer_prefix=None,
+    ):
+        """
+        Compute last-token hidden states for each completion using the same prompt.
+        """
+        assert len(pair) == 1
+        prefix = self.answer_prefix if answer_prefix is None else answer_prefix
+        prompt = self.finalize_prompt(pair[0], mode="predict")
+
+        base_messages = [
+            {"role": "system", "content": "You are a helpful AI assistant."},
+            {"role": "user", "content": prompt.strip()},
+        ]
+
+        rendered_sequences = []
+        for completion in completions:
+            assistant_text = f"{prefix}{completion}".strip()
+            messages = base_messages + [{"role": "assistant", "content": assistant_text}]
+            rendered = self.tokenizer.apply_chat_template(
+                messages, tokenize=False, add_generation_prompt=False
+            )
+            rendered_sequences.append(rendered)
+
+        tokenized = self.tokenizer(
+            rendered_sequences,
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+        ).to(self.model.device)
+
+        self.model.eval()
+        outputs = self.model(**tokenized, output_hidden_states=True)
+        hidden_layers = outputs.hidden_states  # tuple[num_layers+1]
+        attention_mask = tokenized["attention_mask"]
+        seq_lens = attention_mask.sum(dim=1) - 1
+
+        per_sequence = []
+        for seq_idx in range(tokenized["input_ids"].shape[0]):
+            layer_vectors = []
+            for layer_hidden in hidden_layers:
+                layer_vectors.append(
+                    layer_hidden[seq_idx, seq_lens[seq_idx], :]
+                    .detach()
+                    .to("cpu", torch.float32)
+                )
+            per_sequence.append(torch.stack(layer_vectors, dim=0))
+
+        stacked = torch.stack(per_sequence, dim=0)
+        return {
+            "prompt": prompt,
+            "hidden_states": stacked,
+        }
 
         
     def predict_all_in_one(self, pair):
