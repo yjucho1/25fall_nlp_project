@@ -70,6 +70,9 @@ def main():
         if subset and raw_name not in subset:
             continue
 
+        total_examples = len(dataloader.dataset)
+        print(f"[probing] caching split={split} raw_name={raw_name} total={total_examples}")
+
         writer = HiddenStateCacheWriter(
             cache_dir=cache_dir,
             task=task_name,
@@ -108,9 +111,12 @@ def main():
                 )
             )
             extracted += 1
+            if extracted % 50 == 0:
+                print(f"[probing] cached {extracted} examples so far...")
             if limit and extracted >= limit:
                 break
         writer.flush()
+        print(f"[probing] finished raw_name={raw_name}, running_total={extracted}")
         if limit and extracted >= limit:
             break
 
