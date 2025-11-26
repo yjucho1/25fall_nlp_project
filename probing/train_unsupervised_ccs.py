@@ -26,28 +26,46 @@ def _grid_from_sweeps(sweeps: Dict[str, Iterable]) -> Iterable[Dict]:
         yield {k: v for k, v in zip(keys, combo)}
 
 
-def _prepare_pairs(cache_bundle: Dict, hyperparams: Dict) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+def _prepare_pairs(
+    cache_bundle: Dict, hyperparams: Dict
+) -> Tuple[Dict[int, Tuple[torch.Tensor, torch.Tensor]], torch.Tensor]:
     features = cache_bundle["features"]
     labels = cache_bundle["labels"]
-    pooled = select_layers(
-        features,
-        hyperparams.get("layers"),
-        hyperparams.get("pool", "last"),
-    )
-    pos_idx = int(hyperparams.get("pos_index", 0))
-    neg_idx = int(hyperparams.get("neg_index", 1))
-    pos = pooled[:, pos_idx, :]
-    neg = pooled[:, neg_idx, :]
+    layer_indices = hyperparams.get("layers")
+    if not layer_indices:
+        raise ValueError("CCS probes require at least one layer index in hyperparams['layers'].")
 
-    if hyperparams.get("center", True):
-        mean = torch.cat([pos, neg], dim=0).mean(dim=0, keepdim=True)
-        pos = pos - mean
-        neg = neg - mean
-    if hyperparams.get("normalize", False):
-        pos = torch.nn.functional.normalize(pos, dim=-1)
-        neg = torch.nn.functional.normalize(neg, dim=-1)
+    num_layers = features.shape[2]
+    resolved_layers = []
+    for idx in layer_indices:
+        resolved_idx = idx if idx >= 0 else num_layers + idx
+        if resolved_idx < 0 or resolved_idx >= num_layers:
+            raise ValueError(f"Layer index {idx} is out of range for {num_layers} layers.")
+        resolved_layers.append(resolved_idx)
 
-    return pos, neg, labels
+    layer_pairs: Dict[int, Tuple[torch.Tensor, torch.Tensor]] = {}
+    for layer_idx, resolved_idx in zip(layer_indices, resolved_layers):
+        pooled = select_layers(
+            features,
+            [resolved_idx],
+            hyperparams.get("pool", "last"),
+        )
+        pos_idx = int(hyperparams.get("pos_index", 0))
+        neg_idx = int(hyperparams.get("neg_index", 1))
+        pos = pooled[:, pos_idx, :]
+        neg = pooled[:, neg_idx, :]
+
+        if hyperparams.get("center", True):
+            mean = torch.cat([pos, neg], dim=0).mean(dim=0, keepdim=True)
+            pos = pos - mean
+            neg = neg - mean
+        if hyperparams.get("normalize", False):
+            pos = torch.nn.functional.normalize(pos, dim=-1)
+            neg = torch.nn.functional.normalize(neg, dim=-1)
+
+        layer_pairs[layer_idx] = (pos, neg)
+
+    return layer_pairs, labels
 
 
 def _binary_entropy(probs: torch.Tensor) -> torch.Tensor:
@@ -112,19 +130,26 @@ def _run_single_job(
     hyperparams: Dict,
     train_cache: Dict,
     eval_cache: Dict,
-) -> Dict:
-    train_pos, train_neg, train_labels = _prepare_pairs(train_cache, hyperparams)
-    eval_pos, _, eval_labels = _prepare_pairs(eval_cache, hyperparams)
-    model = _train_ccs(train_pos, train_neg, hyperparams)
-    train_metrics = _evaluate(model, train_pos, train_labels)
-    eval_metrics = _evaluate(model, eval_pos, eval_labels)
-    return {
-        "hyperparams": hyperparams,
-        "metrics": {
-            "train": train_metrics,
-            "eval": eval_metrics,
-        },
-    }
+) -> Iterable[Dict]:
+    train_pairs, train_labels = _prepare_pairs(train_cache, hyperparams)
+    eval_pairs, eval_labels = _prepare_pairs(eval_cache, hyperparams)
+    records = []
+    for layer_idx, (train_pos, train_neg) in train_pairs.items():
+        model = _train_ccs(train_pos, train_neg, hyperparams)
+        eval_pos, _ = eval_pairs[layer_idx]
+        train_metrics = _evaluate(model, train_pos, train_labels)
+        eval_metrics = _evaluate(model, eval_pos, eval_labels)
+        records.append(
+            {
+                "layer": layer_idx,
+                "hyperparams": hyperparams,
+                "metrics": {
+                    "train": train_metrics,
+                    "eval": eval_metrics,
+                },
+            }
+        )
+    return records
 
 
 def main():
@@ -168,11 +193,12 @@ def main():
             for job in jobs
         }
         for future in as_completed(future_map):
-            result = future.result()
-            results.append(result)
+            layer_records = future.result()
+            results.extend(layer_records)
             combo = future_map[future]
-            eval_acc = result["metrics"]["eval"]["accuracy"]
-            print(f"[CCS] combo={combo} eval_acc={eval_acc:.4f}")
+            for record in layer_records:
+                eval_acc = record["metrics"]["eval"]["accuracy"]
+                print(f"[CCS] layer={record['layer']} combo={combo} eval_acc={eval_acc:.4f}")
 
     results_sorted = sorted(
         results, key=lambda r: r["metrics"]["eval"]["accuracy"], reverse=True
