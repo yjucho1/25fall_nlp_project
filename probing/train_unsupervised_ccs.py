@@ -157,10 +157,13 @@ def main():
     parser = parser_add(parser)
     parser.add_argument("--probe_train_split", type=str, default="train")
     parser.add_argument("--probe_eval_split", type=str, default="test")
+    parser.add_argument("--cache_dir", type=str, default=None)
     args = parser.parse_args()
     params = params_add(args)
     probing_cfg = params.setdefault("probing", {})
 
+    if args.cache_dir:
+        probing_cfg["cache_dir"] = args.cache_dir
     cache_root = probing_cfg.get("cache_dir", "results/probing_cache")
     task = params["task"]
     dataset = params["dataset"]

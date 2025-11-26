@@ -33,12 +33,15 @@ def main():
     parser.add_argument("--probe_split", type=str, default=None)
     parser.add_argument("--probe_subset", type=str, default=None)
     parser.add_argument("--probe_limit", type=int, default=None)
+    parser.add_argument("--cache_dir", type=str, default=None)
     args = parser.parse_args()
     params = params_add(args)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     params["device"] = device
     probing_cfg = _default_probing_cfg(params)
+    if args.cache_dir:
+        probing_cfg["cache_dir"] = args.cache_dir
 
     split = args.probe_split or probing_cfg.get("split", "test")
     subset = _parse_subset(args.probe_subset or probing_cfg.get("subset"))
