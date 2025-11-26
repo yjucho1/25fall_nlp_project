@@ -32,11 +32,18 @@ class Llama():
         print(f"[llama] loading model: {self.model_id}")
 
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+        if self.tokenizer.pad_token is None:
+            # Reuse EOS for padding to enable batch padding without adding new tokens.
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+        # Ensure right-side padding for causal LM inputs.
+        self.tokenizer.padding_side = "right"
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_id,
             torch_dtype="auto",      # 자동 bf16/fp16 선택
             device_map="auto"        # GPU 있으면 자동으로 얹음
         )
+        if self.model.config.pad_token_id is None:
+            self.model.config.pad_token_id = self.tokenizer.pad_token_id
 
         self.model_id = self.model_name_dict.get(params['baseline']['model'].lower(), None)
         print(f"model: {self.model_id}")
